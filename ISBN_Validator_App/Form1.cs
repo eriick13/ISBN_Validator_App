@@ -16,6 +16,7 @@ namespace ISBN_Validator_App
         public Form1()
         {
             InitializeComponent();
+           
         }
                 
         public const int WM_NCLBUTTONDOWN = 0x00A1;
@@ -50,6 +51,10 @@ namespace ISBN_Validator_App
             
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            isbn10_panel1.Height = button2.Height;
+            isbn10_panel1.BringToFront();
+        }
     }
 }
