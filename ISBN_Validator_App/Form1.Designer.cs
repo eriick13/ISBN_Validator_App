@@ -34,10 +34,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.isbn10_panel1 = new ISBN_Validator_App.isbn10_panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -90,20 +90,15 @@
             this.panel2.Size = new System.Drawing.Size(1058, 580);
             this.panel2.TabIndex = 3;
             // 
-            // button2
+            // label2
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(166, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(266, 83);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ISBN - 10";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(306, 318);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(418, 32);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "bla bla lorem ipsum zvol si isbn";
             // 
             // button3
             // 
@@ -119,27 +114,33 @@
             this.button3.Text = "ISBN - 13";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(166, 104);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(266, 83);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "ISBN - 10";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(306, 318);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(418, 32);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "bla bla lorem ipsum zvol si isbn";
-            // 
             // isbn10_panel1
             // 
-            this.isbn10_panel1.Location = new System.Drawing.Point(233, 222);
+            this.isbn10_panel1.Location = new System.Drawing.Point(249, 220);
             this.isbn10_panel1.Name = "isbn10_panel1";
             this.isbn10_panel1.Size = new System.Drawing.Size(615, 304);
             this.isbn10_panel1.TabIndex = 6;
+            this.isbn10_panel1.Visible = false;
             // 
             // Form1
             // 

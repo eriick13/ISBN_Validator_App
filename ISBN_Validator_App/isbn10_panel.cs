@@ -16,5 +16,20 @@ namespace ISBN_Validator_App
         {
             InitializeComponent();
         }
+        // only numbers and backspace input
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char chr = e.KeyChar;
+            if (!Char.IsDigit(chr) && chr != 8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Please enter a number!");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

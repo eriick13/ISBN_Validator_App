@@ -46,15 +46,11 @@ namespace ISBN_Validator_App
             }
         }
 
-        private void doSth()
-        {
-            
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            isbn10_panel1.Height = button2.Height;
-            isbn10_panel1.BringToFront();
+            //isbn10_panel1.Height = button2.Height;
+            isbn10_panel1.Visible = true;
         }
     }
 }
