@@ -34,11 +34,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.isbn13_panel = new ISBN_Validator_App.isbn10_panel();
+            this.isbn10_panel1 = new ISBN_Validator_App.isbn10_panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.isbn10_panel1 = new ISBN_Validator_App.isbn10_panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +81,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Window;
+            this.panel2.Controls.Add(this.isbn13_panel);
             this.panel2.Controls.Add(this.isbn10_panel1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button3);
@@ -89,6 +91,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1058, 580);
             this.panel2.TabIndex = 3;
+            // 
+            // isbn13_panel
+            // 
+            this.isbn13_panel.Location = new System.Drawing.Point(397, 217);
+            this.isbn13_panel.Name = "isbn13_panel";
+            this.isbn13_panel.Size = new System.Drawing.Size(615, 304);
+            this.isbn13_panel.TabIndex = 7;
+            this.isbn13_panel.Visible = false;
+            // 
+            // isbn10_panel1
+            // 
+            this.isbn10_panel1.Location = new System.Drawing.Point(94, 217);
+            this.isbn10_panel1.Name = "isbn10_panel1";
+            this.isbn10_panel1.Size = new System.Drawing.Size(615, 304);
+            this.isbn10_panel1.TabIndex = 6;
+            this.isbn10_panel1.Visible = false;
             // 
             // label2
             // 
@@ -113,6 +131,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "ISBN - 13";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -133,14 +152,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // isbn10_panel1
-            // 
-            this.isbn10_panel1.Location = new System.Drawing.Point(249, 220);
-            this.isbn10_panel1.Name = "isbn10_panel1";
-            this.isbn10_panel1.Size = new System.Drawing.Size(615, 304);
-            this.isbn10_panel1.TabIndex = 6;
-            this.isbn10_panel1.Visible = false;
             // 
             // Form1
             // 
@@ -172,6 +183,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private isbn10_panel isbn10_panel1;
+        private isbn10_panel isbn13_panel;
     }
 }
 

@@ -51,6 +51,13 @@ namespace ISBN_Validator_App
         {
             //isbn10_panel1.Height = button2.Height;
             isbn10_panel1.Visible = true;
+            isbn13_panel.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            isbn13_panel.Visible = true;
+            isbn10_panel1.Visible = false;
         }
     }
 }
